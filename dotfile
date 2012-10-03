@@ -1,0 +1,153 @@
+graph {
+  overlap = false
+  splines = true
+  sep = .1
+
+  1 [label="Dealing damage"]
+  2 [label="Taking Damage"]
+  3 [label="Heat Generation"]
+  4 [label="Heat Dissipation"]
+  5 [label="Accuracy"]
+  6 [label="Dodge"]
+  7 [label="Flying"]
+  8 [label="Walking"]
+  9 [label="Crawling"]
+  43 [label="Movement"]
+  10 [label="Exploding"]
+  11 [label="Missiles"]
+  12 [label="Lasers"]
+  13 [label="Ballistics"]
+  44 [label="Weapons"]
+  14 [label="Terrain destruction"]
+  15 [label="Speed"]
+  16 [label="Health"]
+  17 [label="Limb damage"]
+  18 [label="Disable - legs"]
+  19 [label="Disable - power"]
+  39 [label="Disable - heat"]
+  45 [label="Disable"]
+  21 [label="Pilot killed"]
+  46 [label="No Pilot"]
+  22 [label="New Pilot - same team"]
+  23 [label="New Pilot - other team"]
+  24 [label="Coolant flush"]
+  25 [label="Pilot Eject"]
+  26 [label="Target lock"]
+  28 [label="AI takeover - for dead pilot"]
+  29 [label="AI takeover - for other team"]
+  30 [label="Weapons malfunction"]
+  31 [label="Power Generation"]
+  32 [label="Shields"]
+  33 [label="Cover"]
+  34 [label="Melee"]
+  36 [label="Stealth"]
+  37 [label="Terrain"]
+  38 [label="Fall down"]
+  40 [label="Size"]
+  41 [label="Heatsinks"]
+  42 [label="Sensors"]
+  47 [label="Pilots as a resource"]
+
+  1 -- 2
+  1 -- 3
+  1 -- 5
+  1 -- 44
+  1 -- 14
+  1 -- 30
+  1 -- 31
+  2 -- 6
+  2 -- 10
+  2 -- 44
+  2 -- 16
+  2 -- 17
+  2 -- 18 [weight="0.5"]
+  2 -- 19 [weight="0.5"]
+  2 -- 21
+  2 -- 30
+  2 -- 32
+  2 -- 33
+  2 -- 38
+  3 -- 44
+  3 -- 15
+  3 -- 17
+  3 -- 45
+  3 -- 21
+  3 -- 30
+  3 -- 31 [weight="2.0"]
+  3 -- 39
+  4 -- 15
+  4 -- 17
+  4 -- 45
+  4 -- 24
+  4 -- 36
+  4 -- 37
+  4 -- 40
+  4 -- 41
+  5 -- 15
+  5 -- 17
+  5 -- 26
+  5 -- 30
+  5 -- 33
+  5 -- 42
+  5 -- 36
+  6 -- 15
+  6 -- 45
+  6 -- 32
+  6 -- 33
+  43 -- 7
+  43 -- 8
+  43 -- 9
+  43 -- 15
+  43 -- 38
+  10 -- 14
+  10 -- 21
+  44 -- 11
+  44 -- 12
+  44 -- 13
+  44 -- 17
+  44 -- 26
+  44 -- 31
+  44 -- 34
+  14 -- 30
+  15 -- 17
+  15 -- 45
+  15 -- 31
+  15 -- 36
+  15 -- 37
+  15 -- 40
+  16 -- 25
+  16 -- 45
+  17 -- 45
+  17 -- 21
+  17 -- 30
+  17 -- 31
+  17 -- 38
+  17 -- 42
+  18 -- 38
+  45 -- 18
+  45 -- 19
+  45 -- 39
+  45 -- 31
+  45 -- 38
+  45 -- 21
+  45 -- 25
+  21 -- 46
+  21 -- 47
+  46 -- 22
+  46 -- 23
+  46 -- 28
+  46 -- 29
+  46 -- 31
+  46 -- 25
+  25 -- 47
+  26 -- 33
+  26 -- 40
+  26 -- 42
+  28 -- 47
+  29 -- 47
+  30 -- 38
+  31 -- 32
+  36 -- 42
+  37 -- 38
+  37 -- 42
+}
